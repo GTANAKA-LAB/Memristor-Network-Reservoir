@@ -1,3 +1,3 @@
 # Memristor-Network-Reservoir
 
-Under construction
+Under construction (the file upload not yet completed)
