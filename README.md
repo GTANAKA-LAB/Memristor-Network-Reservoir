@@ -1,7 +1,7 @@
 # Memristor-Network-Reservoir
 
   ## File description
-  In our work ([Tanaka and Nakane, Sci. Rep., 2022](https://www.nature.com/articles/s41598-022-13687-z)), we presented a simulation platform of reservoir computing with memristor networks for pattern classification. We demonstrated three tasks including waveform classification, ECG classification, and spoken digit recognition. In this repository, we provide the simulation platform for performing these tasks.
+  In our work ([Tanaka and Nakane, Sci. Rep., 2022](https://www.nature.com/articles/s41598-022-13687-z)), we presented a simulation platform for pattern recognition based on reservoir computing with memristor networks. We demonstrated the results of three pattern classification tasks including waveform classification, ECG classification, and spoken digit recognition. In this repository, we provide the codes and simulation tools for performing these tasks.
   
   ## Directories
   * ECG: electrocardiogram classification 
