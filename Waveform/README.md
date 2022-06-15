@@ -9,9 +9,9 @@ The purpose of this task is to classify between them using the memristive reserv
   > main
   ```
   
-  A new folder **dataset** including the 200 timeseries data will created.
+  A new folder ```dataset``` including the 200 timeseries data will created.
   
-  **Step.2** In the folder **reservoir_response**, a response of the memristor network reservoir to input waveform data is produced by the following command:
+  **Step.2** In the folder ```reservoir_response```, a response of the memristor network reservoir to input waveform data is produced by the following command:
   ```
   > main
   ```
@@ -19,12 +19,12 @@ The purpose of this task is to classify between them using the memristive reserv
   The output figure corresponds to Fig. 2 of the reference paper.
   
   
-  **Step.3** In the folder **reservoir_computing**, the reservoir computation is performed by the following command:
+  **Step.3** In the folder ```reservoir_computing```, the reservoir computation is performed by the following command:
   ```
   > main
   ```
   
-  A new folder **reservoir_states** including edge currents on the memristor networks for all the data will be created.
+  A new folder ```reservoir_states``` including edge currents on the memristor networks for all the data will be created.
   
   Using the reservoir states for training data, the readout weight matrix is optimized (train.m).
   
