@@ -1,7 +1,7 @@
 # Waveform classification
-First, a set of multiple sinusoidal and triangular waveform data are generated. 
+A set of multiple sinusoidal and triangular waveform data are generated. 
 Their amplitudes are the same, but the frequencies are distributed. 
-The purpose of this task is to classify between them using the memristive reservoir computing system.
+The purpose of this task is to classify the two types of waveforms using the memristive reservoir computing system.
 
   ## How to use
   ### Step.1
