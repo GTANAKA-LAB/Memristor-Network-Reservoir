@@ -5,6 +5,7 @@ In our work ([Tanaka and Nakane, Sci. Rep., 2022](https://www.nature.com/article
   * ECG: electrocardiogram classification 
   * Waveform: waveform classification
   * Word: spoken digit recognition
+  
   Please see the readme file in each directory for details.
   
   ## Developer
