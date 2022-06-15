@@ -13,7 +13,7 @@ The purpose of this task is to classify between them using the memristive reserv
   A new folder ```dataset``` including the 200 timeseries data will be created.
   
   ### Step.2
-  In the folder ```reservoir_response```, a response of the memristor network reservoir to input waveform data is produced by the following command:
+  In the folder ```reservoir_response```, an example of a response of the memristor network reservoir to input waveform data is produced by the following command:
   ```
   > main
   ```
