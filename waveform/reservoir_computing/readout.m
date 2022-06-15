@@ -1,5 +1,5 @@
 % Copyright (c) 2022 Gouhei Tanaka. All rights reserved.
-% Citation: G.Tanaka and R.Nakane, Scientific Reports (2022).
+% Citation: G.Tanaka and R.Nakane, Scientific Reports, 12, 9868 (2022).
 % DOI: 10.1038/s41598-022-13687-z
 
 function readout()
@@ -47,7 +47,7 @@ for cycle = 1:10
             load(f_in);
             [~, col] = size(edgeI_all);  % stored in struct 'edgeI_all'
 
-            X_block = edgeI_all;
+            X_block = abs(edgeI_all);
             blockLen(1, index) = col;
     
             % Teacher data
@@ -68,16 +68,15 @@ for cycle = 1:10
 
     %%%%% Training
     [match_train,Wout] = train(X_train,D_train,blockLen_train);
-    [~, block_col_train] = size(blockLen_train);
-    ACC_train = [ACC_train, match_train/block_col_train];
+    [~,block_col_train] = size(blockLen_train);
+    ACC_train = [ACC_train,match_train/block_col_train];
     
     %%%%% Testing
     [match_test] = test(X_test,D_test,blockLen_test,Wout);
-    [~, block_col_test] = size(blockLen_test);
-    ACC_test = [ACC_test, match_test/block_col_test];
+    [~,block_col_test] = size(blockLen_test);
+    ACC_test = [ACC_test,match_test/block_col_test];
 
 end % cycle
 
-disp(['Training: Mean accuracy = ',num2str(mean(ACC_train)),', variance = ',num2str(var(ACC_train))]);
-disp(['Testing: Mean accuracy = ',num2str(mean(ACC_test)),', variance = ',num2str(var(ACC_test))]);
-
+disp(['Training: Mean accuracy = ',num2str(mean(ACC_train))]);
+disp(['Testing: Mean accuracy = ',num2str(mean(ACC_test))]);

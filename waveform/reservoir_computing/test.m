@@ -1,5 +1,5 @@
 % Copyright (c) 2022 Gouhei Tanaka. All rights reserved.
-% Citation: G.Tanaka and R.Nakane, Scientific Reports (2022).
+% Citation: G.Tanaka and R.Nakane, Scientific Reports, 12, 9868 (2022).
 % DOI: 10.1038/s41598-022-13687-z
 
 function [match_test]  = test(X_test,D_test,blockLen_test,Wout)
@@ -31,7 +31,7 @@ for i = 1:block_col
     winner = []; 
     for j=1:blockLen_test(1,i)
         [~,label] = max(D_block(:,j));
-        winner = [winner, label];
+        winner = [winner,label];
     end
     class_true(1,i) = mode(winner);
 
@@ -44,7 +44,7 @@ for i = 1:block_col
         winner = [];
         for j=1:blockLen_test(1,i)
             [~,label] = max(Y_block(:,j));
-            winner = [winner, label];
+            winner = [winner,label];
         end
         class_value = mode(winner);
     end

@@ -1,12 +1,11 @@
 % Copyright (c) 2022 Gouhei Tanaka. All rights reserved.
-% Citation: G.Tanaka and R.Nakane, Scientific Reports (2022).
+% Citation: G.Tanaka and R.Nakane, Scientific Reports, 12, 9868 (2022).
 % DOI: 10.1038/s41598-022-13687-z
 
 function main()
 
-close all;
-warning off;
-tic
+global Vmax
+global t_max
 
 %%%%% Parameter values
 Nn = 10;
@@ -20,15 +19,18 @@ t_max = 6.0;
 
 %%%%% Set network structure
 [Em,Ei,Nm,Ni] = generateNet(Nn,net_type);
+disp('Network structure generated ...');
 
 %%%%% Formulate circuit equations
 [a,M0] = setDAE(Nm,r,sigma);
 writeDAE(Nn,Nm,Ni,Em,Ei,a,M0);  % create "DAE_pre.m"
 perl('convertDAE.pl');  % convert "DAE_pre.m" to "DAE.m"
+disp('Circuit equation formulated ...');
 
 %%%%% Read sample data
 c = 1;  % choose class (c=1 for sinusoidal waves; c=2 for triangular waves)
 name_class = ['c',num2str(c)];
+disp(['Class index = ', num2str(c)]);
 
 n = 1;  % choose sample index (1<=n<=100)
 if n < 10
@@ -38,9 +40,10 @@ elseif n < 100
 else
     name_sample = ['n',num2str(n)];
 end
-        
+disp(['Sample index = ', num2str(n)]);
+
 % Load
-dir_data = ['../dataset/'];
+dir_data = ['../data/dataset/'];
 f_in = [dir_data, name_class,'_',name_sample,'.mat'];
 load(f_in);
 [row, ~] = size(data);  % data stored in struct 'data'
@@ -71,4 +74,3 @@ for k = 1:row
     showResults(tq,Yq,Nn,Nm,Em,samplein,st,t_relax_step,t_main_step);
     clear t Y YP F
 end
-toc

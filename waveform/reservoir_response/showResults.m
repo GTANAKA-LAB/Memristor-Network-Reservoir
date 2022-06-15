@@ -1,8 +1,11 @@
 % Copyright (c) 2022 Gouhei Tanaka. All rights reserved.
-% Citation: G.Tanaka and R.Nakane, Scientific Reports (2022).
+% Citation: G.Tanaka and R.Nakane, Scientific Reports, 12, 9868 (2022).
 % DOI: 10.1038/s41598-022-13687-z
 
 function showResults(t,Y,Nn,Nm,Em,samplein,st,t_relax,t_main)
+
+global Vmax
+global t_max
 
 %%%%% Input
 % t: Time
@@ -21,8 +24,8 @@ subplot(3,2,1);
 input = plot(st(t_start:t_end),samplein(t_start:t_end),'-');
 set(gca,'FontName','Arial');
 set(gca,'FontSize',12);
-xlim([3 6])
-ylim([-0.6 0.6])
+xlim([t_max/2 t_max])
+ylim([-Vmax Vmax])
 xlabel('Time (sec)');
 ylabel('Voltage (V)');
 title('Input voltage');
@@ -36,8 +39,8 @@ for k=1:Nn-1
     node.LineWidth=1;
     hold on;
 end
-xlim([3 6]);
-ylim([-0.6 0.6]);
+xlim([t_max/2 t_max]);
+ylim([-Vmax Vmax]);
 set(gca,'FontName','Arial');
 set(gca,'FontSize',12);
 xlabel('Time (sec)');
@@ -57,7 +60,7 @@ for k=2*(Nn-1)+1:2*(Nn-1)+Nm
         hold on;
     end
 end
-xlim([3 6]);
+xlim([t_max/2 t_max]);
 set(gca,'FontName','Arial');
 set(gca,'FontSize',12);
 xlabel('Time (sec)');
@@ -75,7 +78,7 @@ for k=2*(Nn-1)+1:2*(Nn-1)+Nm
     IV.LineWidth=1;
     hold on;
 end
-xlim([-0.6 0.6])
+xlim([-Vmax Vmax])
 set(gca,'FontName','Arial');
 set(gca,'FontSize',12);
 xlabel('Voltage (V)');
@@ -94,7 +97,7 @@ for k=2*(Nn-1)+1:2*(Nn-1)+Nm
     %ylim([1.0e-10 1.0e-5]);
     hold on;
 end
-xlim([-0.6 0.6])
+xlim([-Vmax Vmax])
 set(gca,'FontName', 'Arial');
 set(gca,'FontSize',12);
 xlabel('Voltage (V)');
@@ -111,14 +114,9 @@ for k=2*(Nn-1)+1:2*(Nn-1)+Nm
     ind.LineWidth=1;
     hold on;
 end
-xlim([-0.6 0.6]);
+xlim([-Vmax Vmax]);
 set(gca,'FontName', 'Arial');
 set(gca,'FontSize',12);
 xlabel('Voltage (V)');
 ylabel('Current (A)');
 title('Input vs Currents')
-
-% Save figure
-% set(gcf,'PaperUnits','inches','PaperPosition',[0 0 8 5]);
-% print(gcf,'-dpng','-r300','fig_response.png');
-% print(gcf,'-depsc','-r300','fig_response.eps');
