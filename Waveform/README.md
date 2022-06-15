@@ -27,12 +27,9 @@ The purpose of this task is to classify between them using the memristive reserv
   > main
   ```
   
-  A new folder ```reservoir_states``` including edge currents on the memristor networks for all the data will be created.
-  
-  Using the reservoir states for training data, the readout weight matrix is optimized (train.m).
-  
-  The trained system produces a predicted class for each testing data (test.m).
-  
+  First, a new folder ```reservoir_states``` including edge currents on the memristor networks for all the data will be created.
+  Second, using the reservoir states for training data, the readout weight matrix is optimized.
+  Third, the trained system produces a predicted class for each testing data.
   The classification accuracies for the training and testing data are obtained.
   
   
