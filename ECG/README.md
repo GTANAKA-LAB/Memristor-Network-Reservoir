@@ -33,5 +33,3 @@ The purpose of this task is to classify the two types of ECG signals using the m
   Second, using the reservoir states for the training data, the readout weight matrix is optimized.
   Third, the trained system produces a predicted class label for each of the testing data.
   The classification accuracies for the training and testing data are evaluated.
-  
-  
