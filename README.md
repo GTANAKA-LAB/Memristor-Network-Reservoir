@@ -6,7 +6,7 @@ In our work ([Tanaka and Nakane, Sci. Rep., 2022](https://www.nature.com/article
   * Waveform: waveform classification
   * Word: spoken digit recognition
   
-  Please see the readme file in each directory for details.
+  The details can be found in the readme file in each directory.
   
   ## Developer
   Gouhei Tanaka, International Research Center for Neurointelligence (IRCN), The University of Tokyo
