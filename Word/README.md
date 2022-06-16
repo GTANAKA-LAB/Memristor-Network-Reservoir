@@ -10,7 +10,7 @@ The purpose of this task is to classify the sound signals into ten digit classes
   Put the downloaded and uncompressed folder ```ti46_LDC93S9``` in the folder  ```data```.
   For the preprocessing, the [sap-voicebox](https://github.com/ImperialCollegeLondon/sap-voicebox) 
   and [AuditoryToolbox](https://engineering.purdue.edu/~malcolm/interval/1998-010/) are required. 
-  The data are transformed into cochleagrams which are then masked by the following command:
+  The data are transformed into cochleagrams which are then masked with the following command:
   ```
   > main
   ```
@@ -18,7 +18,7 @@ The purpose of this task is to classify the sound signals into ten digit classes
   Two new folders ```cochleagram``` including cochleagrams and ```cochleagram_mask``` including masked cochleagrams will be created.
   
   ### Step.2
-  In the folder ```reservoir_response```, an example of a response of the memristor network reservoir to an input signal is produced by the following command:
+  In the folder ```reservoir_response```, an example of a response of the memristor network reservoir to an input signal is produced with the following command:
   ```
   > main
   ```
@@ -27,7 +27,7 @@ The purpose of this task is to classify the sound signals into ten digit classes
   
   
   ### Step.3 
-  In the folder ```reservoir_computing```, the reservoir computation is performed by the following command:
+  In the folder ```reservoir_computing```, the reservoir computation is performed with the following command:
   ```
   > main
   ```
