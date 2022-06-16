@@ -2,7 +2,7 @@
 The TI46 Word Corpus contains sound signals of spoken digits and alphabets.
 Following the setting of the other studies on reservoir computing, the 500 spoken digit data (5 speakers, 10 utterances, 10 digits) 
 are chosen for this classification task. 
-The purpose of this task is to classify the sond signals into ten digit classes.
+The purpose of this task is to classify the sound signals into ten digit classes.
 
   ## How to use
   ### Step.1
