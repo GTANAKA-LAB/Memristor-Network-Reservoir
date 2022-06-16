@@ -6,9 +6,9 @@ The purpose of this task is to classify the sound signals into ten digit classes
 
   ## How to use
   ### Step.1
-  Download the TI-46 dataset from ([Linguistic Data Consortium](https://catalog.ldc.upenn.edu/LDC93S9)). 
+  Download the TI-46 dataset from [Linguistic Data Consortium](https://catalog.ldc.upenn.edu/LDC93S9) (**Note that a license is required**). 
   Put the downloaded and uncompressed folder ```ti46_LDC93S9``` in the folder  ```data```.
-  For the preprocessing, the ]sap-voicebox](https://github.com/ImperialCollegeLondon/sap-voicebox) 
+  For the preprocessing, the [sap-voicebox](https://github.com/ImperialCollegeLondon/sap-voicebox) 
   and [AuditoryToolbox](https://engineering.purdue.edu/~malcolm/interval/1998-010/) are required. 
   The data are transformed into cochleagrams which are then masked by the following command:
   ```
