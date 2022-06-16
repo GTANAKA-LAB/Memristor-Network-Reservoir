@@ -1,7 +1,7 @@
 # ECG classification
 The ECG200 dataset contains normal and abnormal ECG data. 
 The datset is divided into 100 training (normal: 69, abnormal: 31) and 100 testing data (normal: 64, abnormal: 36). 
-The purpose of this task is to classify the two types of ECG signals using the memristive reservoir computing system.
+The purpose of this task is to classify the ECG signals into the two types.
 
   ## How to use
   ### Step.1
@@ -20,7 +20,7 @@ The purpose of this task is to classify the two types of ECG signals using the m
   > main
   ```
   
-  The output figure corresponds to Fig. 4b of the reference paper.
+  The output figure corresponds to Fig. 4b of the [reference paper](https://www.nature.com/articles/s41598-022-13687-z).
   
   
   ### Step.3 
