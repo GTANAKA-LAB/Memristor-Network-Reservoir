@@ -23,7 +23,7 @@ The purpose of this task is to classify the sound signals into ten digit classes
   > main
   ```
   
-  The output figure corresponds to Fig. 6b of the reference paper.
+  The output figure corresponds to Fig. 6b of the [reference paper](https://www.nature.com/articles/s41598-022-13687-z).
   
   
   ### Step.3 
