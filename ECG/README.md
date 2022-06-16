@@ -15,7 +15,7 @@ The purpose of this task is to classify the ECG signals into the two types.
   A new folder ```ECG_mask``` including 200 masked data will be created.
   
   ### Step.2
-  In the folder ```reservoir_response```, an example of a response of the memristor network reservoir to input ECG data is produced by the following command:
+  In the folder ```reservoir_response```, an example of a response of the memristor network reservoir to an input ECG signal is produced by the following command:
   ```
   > main
   ```
