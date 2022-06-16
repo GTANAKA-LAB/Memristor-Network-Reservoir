@@ -7,7 +7,7 @@ The purpose of this task is to classify the ECG signals into the two types.
   ### Step.1
   Download the ECG200 dataset from ([UEA & UCR Time Series Classification Repository](https://timeseriesclassification.com/description.php?Dataset=ECG200)). 
   Put the downloaded folder ```ECG200``` in the folder  ```data```. 
-  The masked ECG data are obtained by the following command:
+  The masked ECG data are obtained with the following command:
   ```
   > main
   ```
@@ -15,7 +15,7 @@ The purpose of this task is to classify the ECG signals into the two types.
   A new folder ```ECG_mask``` including 200 masked data will be created.
   
   ### Step.2
-  In the folder ```reservoir_response```, an example of a response of the memristor network reservoir to an input ECG signal is produced by the following command:
+  In the folder ```reservoir_response```, an example of a response of the memristor network reservoir to an input ECG signal is produced with the following command:
   ```
   > main
   ```
@@ -24,7 +24,7 @@ The purpose of this task is to classify the ECG signals into the two types.
   
   
   ### Step.3 
-  In the folder ```reservoir_computing```, the reservoir computation is performed by the following command:
+  In the folder ```reservoir_computing```, the reservoir computation is performed with the following command:
   ```
   > main
   ```
