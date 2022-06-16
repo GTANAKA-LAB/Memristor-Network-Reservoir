@@ -7,10 +7,10 @@ The purpose of this task is to classify the sond signals into ten digit classes.
   ## How to use
   ### Step.1
   Download the TI-46 dataset from ([Linguistic Data Consortium](https://catalog.ldc.upenn.edu/LDC93S9)). 
-  Put the downloaded folder ```ti46_LDC93S9``` in the folder  ```data```.
+  Put the downloaded and uncompressed folder ```ti46_LDC93S9``` in the folder  ```data```.
   For the preprocessing, the ]sap-voicebox](https://github.com/ImperialCollegeLondon/sap-voicebox) 
   and [AuditoryToolbox](https://engineering.purdue.edu/~malcolm/interval/1998-010/) are required. 
-  The data are transformed into cochleagrams and then masked by the following command:
+  The data are transformed into cochleagrams which are then masked by the following command:
   ```
   > main
   ```
