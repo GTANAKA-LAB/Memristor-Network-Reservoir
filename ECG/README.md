@@ -5,7 +5,7 @@ The purpose of this task is to classify the two types of ECG signals using the m
 
   ## How to use
   ### Step.1
-  Download the ECG200 dataset from https://timeseriesclassification.com/description.php?Dataset=ECG200. 
+  Download the ECG200 dataset from ([UEA & UCR Time Series Classification Repository](https://timeseriesclassification.com/description.php?Dataset=ECG200)). 
   Put the downloaded folder ```ECG200``` in the folder  ```data```. 
   The masked ECG data are obtained by the following command:
   ```
