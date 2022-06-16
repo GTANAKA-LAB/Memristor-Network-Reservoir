@@ -30,8 +30,8 @@ The purpose of this task is to classify the two types of ECG signals using the m
   ```
   
   First, a new folder ```reservoir_states``` including edge currents on the memristor networks for all the data will be created.
-  Second, using the reservoir states for training data, the readout weight matrix is optimized.
-  Third, the trained system produces a predicted class label for each of testing data.
+  Second, using the reservoir states for the training data, the readout weight matrix is optimized.
+  Third, the trained system produces a predicted class label for each of the testing data.
   The classification accuracies for the training and testing data are evaluated.
   
   
