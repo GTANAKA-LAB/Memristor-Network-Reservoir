@@ -32,4 +32,3 @@ The purpose of this task is to classify the two types of waveforms using the mem
   Third, the trained system produces a predicted class for each testing data.
   The classification accuracies for the training and testing data are obtained.
   
-  
