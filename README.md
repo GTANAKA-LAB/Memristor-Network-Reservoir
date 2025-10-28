@@ -12,5 +12,5 @@ In our work ([Tanaka and Nakane, Sci. Rep., 2022](https://www.nature.com/article
   Gouhei Tanaka, International Research Center for Neurointelligence (IRCN), The University of Tokyo
   
   ## Citation
-  Gouhei Tanaka and Ryosho Nakane, "Simulation platform for pattern recognition based on reservoir computing with memristor networks
+  Gouhei Tanaka and Ryosho Nakane, "Simulation platform for pattern recognition based on reservoir computing with memristor networks, 
 Scientific Reports, Vol. 12, 9868 (2022).
